@@ -1,0 +1,1 @@
+This folder contains the scripts for gathering extra "walking data" from the field
