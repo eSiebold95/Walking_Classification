@@ -5,6 +5,7 @@ from sklearn.utils import shuffle
 import XGBmodel
 import cnn_model
 from time import time
+import json
 
 class ModelTrainer:
     """
@@ -19,7 +20,7 @@ class ModelTrainer:
         Param random_state: random seed for reproducibility.
         Param n_cross_validation: number of cross validation folds.
         '''
-        self.root_dir = "/home/elias/2025/sshfs_mounter_2025/data_elias/ECSS_2026/"
+        self.root_dir = json.load(open('../directory_paths/directory_paths.json', 'r'))['ECSS_root']
         
         # apply self parameters
         self.random_state = random_state

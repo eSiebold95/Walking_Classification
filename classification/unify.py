@@ -6,12 +6,7 @@ class Unify:
     Unifies data from same participants across multiple files.
     '''
 
-    def __init__(self):
-        
-        # directory containing the labeled data files
-        root_dir = "/home/elias/2025/sshfs_mounter_2025/data_elias/Lab_data/model_labeled_data"
-
-        
+    def __init__(self, root_dir):        
         doubles = {
             'PS01': 'PS02',
             'PS06': 'PS07',
